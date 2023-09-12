@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //start question 1
+        console.log('hello')
+        const array = Array(10) // array size is 10
+				.fill()
+				.map(() => Math.floor(100 * Math.random())); // numbers from 0-50 (exclusive)
+                
+console.log(array);
+document.write(array)
+const returnEvenArray = (array) => {
+   return array.filter(el => {
+      return el % 2 === 0;
+   })
+};
+
+
+console.log(returnEvenArray(array));
+document.write(returnEvenArray(array))
+console.log(array[0]);
+document.writeln(array[0])
+console.log(array[1]);
+document.writeln(array[1])
+console.log(array[2]);
+document.writeln(array[2])
+console.log(array[3]);
+document.writeln(array[3])
+console.log(array[4]);
+document.writeln(array[4])
+
+
+const sumEvens = (array) => {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (i % 2 === 0){ 
+    sum = sum + array[i];
+    }
+  }
+  return sum;
+}
+ 
+console.log(sumEvens(array));
+document.write(sumEvens(array));
+//end question 1
+//start question 2
+
+
+var object = {
+    name: 'Leen' ,
+    age: 26 ,
+    school:'Telecommunication',
+    number : '0987654' ,
+    email :' leenibar4334gmail.com' ,
+}
+
+console.log(object);
+document.write(object);
+console.log(object.name);
+document.write(object.name);
+console.log(object.age);
+document.write(object.age);
+
+console.log(object.school);
+document.write(object.school);
+
+console.log(object.number);
+document.write(object.number);
+
+console.log(object.email);
+document.write(object.email);
+
+
+    </script>
+</body>
+</html>
